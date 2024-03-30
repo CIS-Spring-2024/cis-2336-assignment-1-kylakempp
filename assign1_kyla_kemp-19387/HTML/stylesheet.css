@@ -1,71 +1,109 @@
-header {
-    background: rgb(243, 236, 236);
-    color:rgb(249, 164, 175);
-    padding: 7px;
-    text-align: center;
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Nunito Sans", "sans-serif";
+
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/cougargrounds.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
     
 }
+
 
 nav
 {
-    display:flex;
-    padding: 2% 6%;
+  
+     width:100%;
+    height:80px;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    background-color:white;
 }
 
-.topnav
-{
-    flex: 1;
-    text-align:center;
+
+.logo {
+    font-size: 2rem;
+    font-weight:bold;
+    text-decoration:none;
+    color: #000000;
 }
 
-.topnav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 0px 12px;
-    position:relative;
+nav .fa-bars {
+    display:none;
 }
 
-.topnav ul li a
-{
-    color:white;
-    text-decoration: none;
-    font-size:15px;
+ul {
+    display:flex;
 }
 
-.topnav ul li::after
-{
-    content: '';
-    width:0%;
-    height:2px;
-    background:rgb(249, 164, 175);
-    display:block;
-    margin:auto;
-    transition: 0.5s;
+li {
+    list-style:none;
+    margin-right: 2rem;
+}
+
+a {
+    text-decoration:none;
+    color:#2c2c2c;
+}
+
+.header ul li {
+    background:rgb(244, 239, 236);
+    padding: 10px 16px;
+    border-radius: 4px;
     
 }
 
-.topnav ul li:hover::after
-{
-    width:100%;
+.header ul li:hover {
+    background:rgb(221, 90, 81);
+    transition: 0.2s ease-out;
+    color:white;
 }
+
+
 
 body
 {
-    background-color:rgb(107, 84, 59);
+    background-color:rgb(254, 249, 244);
 }
+
+
+.maintext {
+    padding: 50px;
+    background-color:rgb(221, 90, 81);
+    text-align: center;
+
+}
+
+#h01 {
+    font-size: 50px;
+}
+
+#p01 {
+    font-size: 20px;
+}
+    
+
 
 
 .text
 {
-    width: 25%;
+    width: 50%;
+    justify-content: space-between;
     
-    text-align:left;
-    padding-top: 10px;
-    padding-bottom:400px;
-    background-color:rgb(243, 236, 236);
+    
 }
+
 
 
 
